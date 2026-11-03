@@ -88,7 +88,7 @@ class Bottleneck(nn.Module):
             nn.BatchNorm2d(mid_channels),
             nn.ReLU(inplace=True),
 
-            # 3x3 卷积（在低维空间提取空间-光谱特征）
+            # 3x3 卷积
             nn.Conv2d(mid_channels, mid_channels, kernel_size=kernel_size, padding=padding, bias=False),
             nn.BatchNorm2d(mid_channels),
             nn.ReLU(inplace=True),

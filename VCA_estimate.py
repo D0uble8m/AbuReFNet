@@ -29,7 +29,6 @@ def _estimate_snr(data, mean_spectrum, projected_data):
 def vca(data, num_endmembers, random_seed=None, snr_input=0.0):
     """
     Vertex Component Analysis.
-
     Args:
         data: HSI data matrix with shape (bands, pixels).
         num_endmembers: Number of endmembers to extract.
